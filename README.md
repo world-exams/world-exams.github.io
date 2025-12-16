@@ -1,16 +1,18 @@
-# 🌍 World Exams
+# 🌍 World Exams - Landing Page
 
-> **Free practice exams for standardized tests worldwide**
+> **Free, AI-powered exam preparation for students worldwide**
 
 [![Active](https://img.shields.io/badge/status-active-brightgreen)](https://world-exams.github.io)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Open Source](https://img.shields.io/badge/open-source-orange.svg)](https://github.com/world-exams)
+[![Countries](https://img.shields.io/badge/countries-21+-purple)](https://world-exams.github.io)
 
-## 🎯 Mission
+## 🎯 About
 
-Democratize access to quality exam preparation materials for standardized tests around the world. Every student deserves free access to practice questions and study resources.
+This is the official landing page for **World Exams**, showcasing standardized test preparation platforms for 21+ countries worldwide.
 
-## 🗺️ Available Platforms
+**Live Site:** https://world-exams.github.io
+
+## 🗺️ Featured Exam Platforms
 
 ### ✅ Active
 
@@ -26,66 +28,67 @@ Democratize access to quality exam preparation materials for standardized tests 
 - **🇺🇸 USA** - SAT
 - **🇨🇳 China** - Gaokao (高考)
 - **🇮🇳 India** - JEE Main
+- And more...
 
-## 🏗️ Architecture
+## 🏗️ Tech Stack
 
-Each country has its own repository with:
+- **Framework:** Astro 5
+- **UI Components:** Svelte 5
+- **Styling:** TailwindCSS
+- **3D Globe:** Cobe
+- **Hosting:** GitHub Pages
+- **Analytics:** Built-in
 
-- **Public UI** - Astro + Svelte components
-- **Country-specific content** - Localized to the target audience
-- **Shared API** - Centralized question bank (private backend)
+## 🚀 Development
 
-### Structure
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 📁 Project Structure
 
 ```
-world-exams/
-├── world-exams.github.io     # Landing page (this repo)
-├── saber-co                  # Colombia UI
-├── exani-mx                  # México UI
-├── enem-br                   # Brasil UI
-└── [other countries]         # More to come...
-
-Backend (Private):
-└── saberparatodos            # API + Questions + Edge Functions
+world-exams-landing/
+├── src/
+│   ├── components/      # Svelte & Astro components
+│   ├── layouts/         # Page layouts
+│   ├── pages/           # Routes
+│   ├── styles/          # Global styles
+│   └── data/            # Static data (countries, etc.)
+├── public/              # Static assets
+├── astro.config.mjs     # Astro configuration
+└── package.json         # Dependencies
 ```
+
+## 🌐 Country-Specific Repositories
+
+Each country has its own repository with localized UI:
+
+- [saber-co](https://github.com/world-exams/saber-co) - 🇨🇴 Colombia
+- More coming soon...
 
 ## 🤝 Contributing
 
-We welcome contributions! Each country platform accepts:
+We welcome contributions! You can help by:
 
-- 📝 New practice questions
-- 🐛 Bug reports
-- 🌟 Feature requests
-- 🌐 Translations
-- 🎨 UI/UX improvements
+- 🐛 Reporting bugs
+- 💡 Suggesting new features
+- 🎨 Improving UI/UX
+- 🌐 Adding new countries
+- 📝 Improving documentation
 
-See individual repository READMEs for specific contribution guidelines.
-
-## 🛠️ Tech Stack
-
-- **Frontend**: Astro 5 + Svelte 5 + TailwindCSS
-- **Backend**: Cloudflare Pages + Workers
-- **Database**: Supabase (PostgreSQL + Edge Functions)
-- **AI**: Gemini API for content generation
-- **Hosting**: Cloudflare Pages (free tier)
+See individual country repositories for contribution guidelines.
 
 ## 📄 License
 
 MIT License - See [LICENSE](LICENSE) for details.
-
-Question content varies by source:
-- Original questions: CC BY-SA 4.0
-- AI-generated variations: CC BY-NC-SA 4.0
-
-## 🌟 Star History
-
-If you find this project useful, please consider giving it a ⭐️
-
-## 📞 Contact
-
-- **Organization**: [github.com/world-exams](https://github.com/world-exams)
-- **Website**: [world-exams.github.io](https://world-exams.github.io)
-
----
-
-**Made with ❤️ by the open source community**
