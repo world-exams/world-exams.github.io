@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Exams - Practice for Standardized Tests Worldwide</title>
+    <meta name="description" content="Free practice exams for standardized tests across the globe. Prepare for ICFES, EXANI, ENEM, SAT, and more.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .country-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 0.8s ease backwards;
+        }
+
+        .country-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .country-flag {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .country-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .exam-name {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .status.active {
+            background: #10b981;
+        }
+
+        .status.coming-soon {
+            background: #f59e0b;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: #fff;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        }
+
+        .cta-button.disabled {
+            background: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            cursor: not-allowed;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0,0,0,0.2);
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .country-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌍 World Exams</h1>
+        <p class="tagline">Free practice exams for standardized tests worldwide</p>
+    </header>
+
+    <main>
+        <div class="country-grid">
+            <!-- Colombia -->
+            <div class="country-card" style="animation-delay: 0.1s">
+                <div class="country-flag">🇨🇴</div>
+                <div class="country-name">Colombia</div>
+                <div class="exam-name">Saber 11° - ICFES</div>
+                <span class="status active">✓ Active</span>
+                <br>
+                <a href="https://saberparatodos.space" class="cta-button">Start Practicing</a>
+            </div>
+
+            <!-- México -->
+            <div class="country-card" style="animation-delay: 0.2s">
+                <div class="country-flag">🇲🇽</div>
+                <div class="country-name">México</div>
+                <div class="exam-name">EXANI-II / CENEVAL</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+
+            <!-- Brasil -->
+            <div class="country-card" style="animation-delay: 0.3s">
+                <div class="country-flag">🇧🇷</div>
+                <div class="country-name">Brasil</div>
+                <div class="exam-name">ENEM</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+
+            <!-- Argentina -->
+            <div class="country-card" style="animation-delay: 0.4s">
+                <div class="country-flag">🇦🇷</div>
+                <div class="country-name">Argentina</div>
+                <div class="exam-name">Ingreso Universitario</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+
+            <!-- Chile -->
+            <div class="country-card" style="animation-delay: 0.5s">
+                <div class="country-flag">🇨🇱</div>
+                <div class="country-name">Chile</div>
+                <div class="exam-name">PAES</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+
+            <!-- USA -->
+            <div class="country-card" style="animation-delay: 0.6s">
+                <div class="country-flag">🇺🇸</div>
+                <div class="country-name">United States</div>
+                <div class="exam-name">SAT</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+
+            <!-- Perú -->
+            <div class="country-card" style="animation-delay: 0.7s">
+                <div class="country-flag">🇵🇪</div>
+                <div class="country-name">Perú</div>
+                <div class="exam-name">Admisión Universitaria</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+
+            <!-- China -->
+            <div class="country-card" style="animation-delay: 0.8s">
+                <div class="country-flag">🇨🇳</div>
+                <div class="country-name">China</div>
+                <div class="exam-name">Gaokao (高考)</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+
+            <!-- India -->
+            <div class="country-card" style="animation-delay: 0.9s">
+                <div class="country-flag">🇮🇳</div>
+                <div class="country-name">India</div>
+                <div class="exam-name">JEE Main</div>
+                <span class="status coming-soon">Coming Soon</span>
+                <br>
+                <a href="#" class="cta-button disabled">Coming Soon</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 World Exams - Open Source Education</p>
+        <div class="footer-links">
+            <a href="https://github.com/world-exams" target="_blank">GitHub</a>
+            <a href="https://github.com/world-exams/world-exams.github.io#contributing">Contribute</a>
+            <a href="https://github.com/world-exams/world-exams.github.io#license">License</a>
+        </div>
+    </footer>
+</body>
+</html>
