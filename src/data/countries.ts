@@ -17,6 +17,20 @@ export interface Country {
 }
 
 export const countries: Country[] = [
+  // LIVE COUNTRIES
+  {
+    code: 'CO',
+    name: 'Colombia',
+    exam: 'Saber 11 / ICFES',
+    flag: '🇨🇴',
+    flagStripe: 'linear-gradient(to right, #FCD116 50%, #003893 50%, #003893 75%, #CE1126 75%)',
+    status: 'live',
+    region: 'latam',
+    folder: 'colombia',
+    questionCount: 1813,
+    externalUrl: 'https://saberparatodos.pages.dev/',
+  },
+
   // TOP 10 Countries by Population
   {
     code: 'CN',
@@ -113,18 +127,6 @@ export const countries: Country[] = [
   },
 
   // LATIN AMERICA
-  {
-    code: 'CO',
-    name: 'Colombia',
-    exam: 'Saber 11 / ICFES',
-    flag: '🇨🇴',
-    flagStripe: 'linear-gradient(to right, #FCD116 50%, #003893 50%, #003893 75%, #CE1126 75%)',
-    status: 'live',
-    region: 'latam',
-    folder: 'colombia',
-    questionCount: 1813,
-    externalUrl: 'https://saberparatodos.pages.dev/',
-  },
   {
     code: 'AR',
     name: 'Argentina',
